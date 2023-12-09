@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="assets/icon.png" type="image/png">
+    <title>Element Game</title>
+</head>
+<body>
+    <div id="game-container">
+        <div id="top-left-buttons">
+            <!-- New Help Button -->
+            <button class="button-help" id="help-button">Help</button>
+        </div>
+
+        <input type="color" id="color-input" value="#E8E5DA">
+        <div id="score-container">
+            Score: <span id="score">0</span>
+            <div id="timer-container">
+                <span id="timer">Time: 0</span>
+            </div>
+        </div>
+        <div id="flashcard"></div>
+        <input type="text" id="answer-input" placeholder="">
+        <div id="button-container">
+            <!-- Existing Buttons -->
+            <button class="action-button" id="solution-button">Show Answer</button>
+            <button class="action-button" id="next-button">Next</button>
+            <button class="action-button" id="timer-button">Timer</button>
+        </div>
+    </div>
+
+    <!-- New Element with the Same Size -->
+    <div id="additional-container"></div>
+
+    <script src="script.js"></script>
+</body>
+</html>
